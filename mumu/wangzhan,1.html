@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+   
+<head>
+    <!-- 定义文档的字符编码 -->
+    <meta charset="UTF-8" />
+    <!-- 设置视口的宽度和初始缩放比例 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 设置文档的标题 -->
+    <title>Document</title>
+    <!-- 定义文档的样式 -->
+    <style>
+        /* 为所有元素添加边框 */
+        * {
+            border: #ebeaba 1px solid;
+        }
+        /* 为背景图片添加样式 */
+        .background-image{
+        background-image:url("AIACG_1723125341283.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+   
+        /* 移除body的默认外边距 */
+        body {
+            margin: 0;
+            height: 100%;
+        }
+     
+        /* 定义列的样式 */
+        .column {
+            float: left;
+            padding: 10px;
+        }
+   
+        /* 定义侧边栏和主栏的宽度 */
+        .column.side,
+        .column.main {
+            width: 100%;
+        }
+   
+        /* 清除浮动 */
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+   
+        /* 媒体查询，调整侧边栏和主栏的宽度 */
+        @media screen and (min-width: 601px) {
+            .column.side {
+                width: 10%;
+            }
+   
+            .column.main {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+   
+<body >
+    <!-- 第一行内容 -->
+    <div class="row">
+        <!-- 侧边栏内容 -->
+        <div class="column side">
+            <p>中等职业学校</p>
+        </div>
+        <!-- 主栏内容 -->
+        <div class="column main">
+            <img src="https://www.cdqcxy.com/uploads/tupian/5f335e6d471c5.jpg" alt="1" />
+            <p><a href="https://ditu.amap.com/search?id=B0FFHH56F8&city=210711&geoobj=121.119998%7C41.133396%7C121.130178%7C41.137498&query_type=IDQ&query=%E9%94%A6%E5%B7%9E%E5%B8%82%E6%9C%BA%E7%94%B5%E5%B7%A5%E7%A8%8B%E5%AD%A6%E6%A0%A1&zoom=17.16"
+                target="_blank">院校地址:锦州市滨海新区天山路17号</a>
+        </div>
+    </div>
+    <!-- 第二行内容 -->
+    <div class="row">
+        <!-- 侧边栏内容 -->
+        <div class="column side">
+            <p>大学</p>
+        </div>
+        <!-- 主栏内容 -->
+        <div class="column main">
+            <img src="https://kkimgs.yisou.com/ims?f=webp&kt=url&at=smstruct&key=aHR0cHM6Ly94dWV4aW4zNjVpbWFnZXMub3NzLWNuLWhleXVhbi5hbGl5dW5jcy5jb20vc2Nob29sX2Jhbm5lci_ovr3lroHnn7PljJbogYzkuJrmioDmnK_lrabpmaIucG5n&sign=yx:m6vf7EmZmSNHxkMub7BkjxPhgAs=&tv=400_400" alt="1" />
+            <p><a href="https://ditu.amap.com/search?query=%E5%8F%A4%E5%A1%94%E6%A0%A1%E5%8C%BA%EF%BC%9A%E8%BE%BD%E5%AE%81%E7%9C%81%E9%94%A6%E5%B7%9E%E5%B8%82%E5%8C%97%E4%BA%AC%E8%B7%AF%E4%BA%8C%E6%AE%B5%E5%9B%9B%E5%8F%B7&city=210000&geoobj=120.797259%7C40.569017%7C122.589165%7C41.293239&zoom=9.7"
+               target="_blank">院校地址:辽宁省锦州市古塔区北京路2段4号</a>
+        </div>
+    </div>
+</body>
+   
+</html>

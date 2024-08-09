@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>木木</title>
+ 
+<style>
+    *{
+        border: #e4e8cf 1px solid;
+    }
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    body{
+        height: 100%;
+        margin: 0;
+    }
+    .background-image{
+        background-image:url("AIACG_1723125341283.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .header,.tponav,.row{
+        background-color: rgb(255, 255, 255);
+ 
+    }
+ 
+    .header{
+         padding: 20px;
+         text-align: center;
+         background-color: rgb(255, 255, 255);
+    }
+    .tponav{
+        overflow: hidden;;
+        padding: 10px;
+        text-align: center;     
+    }
+    .column{
+        float: left;
+        width: 33.33%;
+        height: auto;
+        padding: 50px;
+        box-sizing: border-box;
+    }
+    .row:after{
+         content: "";
+         display: table;
+         clear: both;
+    }
+    /* 定义媒体查询，当屏幕宽度小于600px时的样式 */
+    @media screen and (max-width: 600px){
+        .column{
+            width: 100%;
+     } 
+        
+    }
+    .footer{
+         background-color: #333;
+         padding: 20px;
+         text-align: center;
+         background-color: rgb(255, 255, 255);
+    }
+     
+</style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://img.xdn001.com/pic/up/2021-4/16173487884174329.jpg"   
+        alt="木木"  width="100px" height="100px"/></div>
+    <div class="tponav">
+        <i>你好我是木木，欢迎来到我的网站</i></div>
+    <div class="row">   
+        <div class="column flex"> 
+        </div>
+        <div class="column"><p>你可以通过以下方式联系我：</p>
+            <p>qq：123456789</p>
+            <p>微信：123456789</p>
+            <p>手机：15754162671</p>
+            <p>邮箱：15754162671@163.com</p>  
+        </div>
+ 
+        <div class="column"> 
+            <h1><a href="http://127.0.0.1:3000/mumu/wangzhan,1.html" target="_blank" >
+            想知道我的毕业学校吗？请点击这里</a>  
+        </div>
+    </div>
+        <div class="footer">
+        <!-- 版权声明 -->
+        <p>© 2021 木木. All rights reserved.</i>
+        </div>
+    </div>
+                 
+</body>
+</html>
